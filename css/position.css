@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.outercont{
+    border: 3px dashed black;
+    width: 75vw;
+    height: 85vh;
+    margin: 40px auto;
+    position: relative;
+}
+body{
+    font-size: 1.5rem;
+    min-height: 200vh
+}
+.innercont{
+    border: 2px solid blue;
+    width: 40vw;
+    height: 50vh;
+    margin: 200px auto;
+    
+}
+.box{
+    width: 150px;
+    height: 150px;
+    color: white;
+    padding: 1rem;
+}
+.absolute{
+    background-color:blue;
+    position: absolute;
+    top:0;
+    left:0;
+    
+    
+}
+.relative{
+    background-color: red;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+.fixed{
+    background-color: aqua;
+    position: fixed;
+    top: 0;
+}
+.stick{
+    background-color: rgb(78, 179, 11);
+    position: sticky;
+    top: 100px;
+}

@@ -1,0 +1,39 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-size: 2rem;
+}
+li{
+    display: inline-block;
+    margin:0 4rem;
+    
+}
+li:last-child a{
+    margin-right: 8rem;
+}
+ul{
+    text-align: right;
+    background-color: black;
+    color: white;
+}
+
+li a{
+   text-decoration: none;
+   color: white;
+}
+li a:hover,li a:focus,li a:active{
+    
+    text-decoration: underline;
+}
+p{
+    background-color: aliceblue;
+}
+.box{
+    display: inline-block;
+    background-color: green;
+    padding: 4rem;
+    
+}

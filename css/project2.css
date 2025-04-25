@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.nowrap{
+    white-space: nowrap;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+  background-color: lightblue;
+  background-image: linear-gradient(lightblue,rgb(90, 90, 218));
+  min-height: 100vh;
+ 
+  display: flex;
+  flex-direction: column;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+nav{
+    background-color: white;
+    padding: 0.3rem;
+    border-bottom: 2px solid black;
+    color: black;
+    display: flex;
+    
+    justify-content: space-evenly;
+}
+nav a{
+    color: black;
+    
+}
+nav :is( a:hover,a:focus){
+    color: rgb(78, 78, 199);
+}
+nav a:visited{
+    color:rgb(61, 61, 68);
+}
+main{
+ flex-grow: 1;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 1.5rem;
+ padding: 1rem;
+}
+.card{
+    scroll-margin-top: 8rem;
+    width: min(100%,350px);
+    background-color: gray;
+    border:2px solid black;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.card:target{
+    border: 5px solid green;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+}
+.card:last-child{
+    background-color: bisque;
+}
+.card figcaption::after{
+    content: " hello";
+}
+.card p::before{
+    content: open-quote;
+    font-size:2rem;
+}
+.card p::after{
+    content:close-quote;
+    font-size:2rem;
+    display: inline;
+}
+/* small */
+@media screen and (min-width:576px){
+    main{
+        justify-content: center;
+        flex-flow: row wrap;
+        padding: 1rem;
+    }
+    .card{
+        width: min(100%,400px);
+    }
+    .card:last-child{
+        order:-1;
+    }
+    
+}
+/* medium */
+@media screen and (min-width:765px) {
+    
+    .card{
+        width: min(100%,325px);
+    }
+    .card figure{
+        flex-flow:column-reverse;
+    }
+    .card p{
+        margin-top: 1rem;
+    }
+    
+}
+/* large */
+@media screen and (min-width:992px){
+    .card{
+        width: min(100%,400px);
+    }
+    .card:nth-child(2){
+        order:-1;
+    }
+    header nav{
+        display: none;
+    }
+}
+
+/* XL */
+@media screen  and (min-width:1200px){
+    .card{
+        width: min(33%-1rem,500px);
+    }
+    
+}

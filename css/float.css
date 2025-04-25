@@ -1,0 +1,27 @@
+body{
+    font-size: 1.5rem;
+
+}
+.block{
+    width: 30vw;
+    background-color: aqua;
+    height: 30vw;
+    margin-right: 2px;
+    
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear{
+    clear: both;
+  
+}
+section{
+    background-color: burlywood;
+    border: 2px solid black;
+    display: flow-root;
+    
+}
